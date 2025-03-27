@@ -88,21 +88,22 @@ def show_inventory():
         for product, details in inventory.items():
              print(f"{product}: {details['quantity']} units - ${details['price']} each")
 
-while True:
-    print("\nMenu:")
-    print("1. Add product to inventory")
-    print("2. Sell product")
-    print("3. Show inventory")
-    print("4. Exit")
-    option= int(input("Enter an option: ")) #we ask the user to enter an option.
+if __name__ == "__main__":
+    while True:
+        print("\nMenu:")
+        print("1. Add product to inventory")
+        print("2. Sell product")
+        print("3. Show inventory")
+        print("4. Exit")
+        option= int(input("Enter an option: ")) #we ask the user to enter an option.
 
-    if option== 1: #This is a conditional statement that check if the option is 1.
-        add_product() #If the option is 1, we call the add_product function.
-    elif option==2:
-        sell_product()
-    elif option==3:
-        show_inventory()
-    elif option==4:
-        break
-    else:
-        print("Invalid option. Try again.")
+        if option== 1: #This is a conditional statement that check if the option is 1.
+            add_product() #If the option is 1, we call the add_product function.
+        elif option==2:
+            sell_product()
+        elif option==3:
+            show_inventory()
+        elif option==4:
+            break
+        else:
+            print("Invalid option. Try again.")
