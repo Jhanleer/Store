@@ -50,7 +50,7 @@ def withdraw(balance):
         print("Insufficient funds.")
     return balance
 
-def main():
+if __name__ == "__main__":
     balance= load_balance()
     
     while True:
@@ -70,5 +70,4 @@ def main():
             else:
                 print("Invalid option.")
 
-if __name__ == "__main__":
-    main()  # Llamamos la función principal para iniciar el programa.
+ # Llamamos la función principal para iniciar el programa.
