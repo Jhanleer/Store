@@ -31,10 +31,10 @@ def buy_product():
     if balance >= total_cost:
         # Actualizar inventario y saldo
         InventorySystem.sell_product()
-        Bank.load_balance(balance - total_cost)  # Asumiendo que tienes una función para actualizar el balance
+        Bank.load_balance()  # Asumiendo que tienes una función para actualizar el balance
         print(f"✅ You bought {quantity} {product}(s) for ${total_cost:.2f}.")
     else:
-        print("❌ Insufficient balance.")
+            print("❌ Insufficient balance.")
 
 # Menú de la tienda
 while True:
